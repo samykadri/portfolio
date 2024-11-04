@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZolaT.EA</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px 50px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: white;
+        }
+
+        header .top img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .facilate {
+            margin-left: auto;
+            margin-right: 20px;
+        }
+
+        .facilate a {
+            text-decoration: none;
+            margin: 0 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .button a {
+            text-decoration: none;
+            margin: 0 10px;
+            background-color: #0000ff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        #admin {
+            background-color: #000000;
+        }
+
+        .button a:hover {
+            color: #555555;
+        }
+
+        #Home {
+    background-image: url('https://www.yourcourts.com/images/all-sports-background.jpg'); /* Assurez-vous que l'URL soit correcte */
+    background-size: cover; /* Cela permet à l'image de couvrir toute la section */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    height: 100vh; /* S'assure que la section occupe toute la hauteur de la fenêtre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    color: white; /* Texte en blanc pour plus de lisibilité */
+}
+
+
+        /* NAVIGATION AND HOME SECTION */
+        nav {
+            background-image: url(https://www.yourcourts.com/images/all-sports-background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 100px 0;
+            color: #f2f2f2;
+            text-align: center;
+        }
+
+        nav h1 {
+            font-size: 30px;
+        }
+
+        nav h3 {
+            color: bisque;
+            margin-bottom: 40px;
+        }
+
+        .reserve {
+            padding: 15px 30px; 
+            border: none; 
+            background-color: #ffffff; 
+            color: rgba(0, 0, 0, 0.63); 
+            font-size: 18px; 
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            transition: background-color 0.3s ease;
+        }
+
+        .reserve:hover {
+            background-color: #e6e6e6;
+        }
+
+        nav img {
+            width: 150px;
+            margin-top: 50px;
+            margin-right: 20px;
+        }
+
+        /* INFORMATION SECTION */
+        .information {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            padding: 50px 0;
+        } 
+
+        .information > div {
+            width: 30%;
+            padding: 10px;
+        } 
+
+        .information img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        } 
+
+        .information h3 {
+            color: #0000FF; 
+            margin-bottom: 5px;
+        }
+
+        .information h4 {
+            color: #000000;
+        }
+
+        /* GUIDE SECTION */
+        .Guide{
+    margin-top: 100px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color: #cce0f0;
+    
+}
+.guide {
+    text-align: center;
+    max-width: 600px;
+}
+
+.guide h1 {
+    display: flex;
+    font-size: 40px;
+    color: #0000FF; 
+    text-align: center;
+    margin-left: 0px;
+    
+}
+
+.guide img {
+    width: 100px; 
+    height: auto;
+    
+}
+
+.guide h3 {
+    color: #000000; 
+    
+}
+
+.guide h4 {
+    color: #666666; 
+}
+
+.avan{
+    text-align: center;
+    margin-top: 200px;
+}
+.avantage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    text-align: center; 
+}
+
+.avantage h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.avantage h4 {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.avantage img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.avantage h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.avantage p { 
+    color: #666;
+    margin-bottom: 30px;
+}
+
+footer h2{
+    text-size-adjust: 150%;
+    text-align: center;
+    color: #f0f0f0;
+    background-color:#494949;
+    text-decoration: none;
+    animation: scroll-to-top-animation 2s forwards;
+    margin-bottom: 0px;
+    margin-top: 200px;
+    height: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+a {
+    text-decoration: none; 
+    color: #007bff;
+    transition: color 0.3s ease; 
+    font-weight: bold; 
+}
+footer a:hover {
+    color: #9bd3e9;
+}
+a:visited {
+    color: white; 
+}
+.us{
+    margin-top: 100px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color: #5f5f5f;
+    margin-top: 0px;
+}
+.us1, .us2{ 
+    margin-right: 250px;
+}
+.logo{
+    background-color: #5f5f5f;
+    text-align: center;
+}
+#log1,#log2,#log3,#log4,#log5{
+    margin-top: 50px;
+    margin-right: 90px;
+}
+#language{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 200px; 
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.text-contaier {
+    max-width: 500px;
+    margin-left: 100px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    color: grey;
+}
+
+.btn-container {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.btn-container img {
+    max-width: 150px;
+    margin-right: 10px;
+
+}
+
+.phone-img {
+    max-width: 300px;
+    margin-right: 250px;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="top">
+            <img src="../../Desktop/MonSite/image/logo.png" alt="Logo ZolaT.EA">
+        </div>
+        <div class="facilate">
+            <a href="#Home">Home</a>
+            <a href="#Avantages">Benefits</a>
+        </div>
+        <div class="button">
+            <a href="../MonSite/sign up.html">Sign up</a>
+            <a href="../MonSite/login.html">Log in</a>
+            <a href="../MonSite/admin.html" id="admin">👨‍💼</a>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav id="Home">
+        <div class="description">
+            <h1>Reserve your sports ground in one click!</h1>
+            <h3>Instantly find and reserve the ideal sports ground near you.<br>Our app makes your life easier</h3>
+            <a href="../MonSite/stadiums.html"><input type="button" value="Book Now" class="reserve"></a>
+            <div>
+                <img src="../../Desktop/MonSite/image/appstore.png" alt="App Store">
+                <img src="../../Desktop/MonSite/image/playstore.png" alt="Play Store">
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- INFORMATION SECTION -->
+        <div class="information">
+            <div id="infor1">
+                <img src="../../Desktop/MonSite/image/1-removebg-preview.png" alt="100% secure">
+                <h3>100% secure</h3>
+                <h4>Navigate with confidence in our application, your security is our commitment.</h4>
+            </div>
+            <div id="infor2">
+                <img src="../../Desktop/MonSite/image/2-removebg-preview.png" alt="Simplified use">
+                <h3>Simplified use</h3>
+                <h4>A user-friendly interface for a hassle-free experience.</h4>
+            </div>
+            <div id="infor3">
+                <img src="../../Desktop/MonSite/image/3-removebg-preview.png" alt="Fast and safe">
+                <h3>Fast and safe</h3>
+                <h4>Enjoy a hassle-free experience and focus on your sports performance.</h4>
+            </div>
+        </div>
+
+        <!-- GUIDE SECTION -->
+        <div class="Guide">
+            &nbsp;
+            <img src="../../Desktop/MonSite/image/mockup-1.png">
+            <div class="guide">
+                <h1>How it works?</h1>
+                <img src="../../Desktop/MonSite/image/4-removebg-preview.png">
+                <h3>Find your land</h3>
+                <h4>Locate the sports fields available on our interactive map.sport, schedules, equipment..</h4>
+                <img src="../../Desktop/MonSite/image/5-removebg-preview.png">
+                <h3>locate</h3>
+                <h4>Reserve online in real time without contacting the owner. Simple and instant!</h4>
+                <img src="../../Desktop/MonSite/image/6-removebg-preview.png">
+                <h3>Play and enjoy</h3>
+                <h4>Receives a booking confirmation. On any day, your land is available at the scheduled time. Have fun !</h4>
+            </div>
+        </div>
+
+
+        <div class="avan" id="Avantages">
+            &nbsp;
+            <h1>Exclusive Benefits</h1>
+            <h3>No more unpleasant surprises or stormed sites, your slot is guaranteed!</h3>
+        </div>
+        <div>
+            <div class="avantage">
+                <div id="avan1">
+                    <img src="../../Desktop/MonSite/image/7-removebg-preview.png">
+                    <h3>Wide choice of land</h3>
+                    <h4>Discover various sports fields to satisfy your sporting preferences.</h4>
+                </div>
+                <div id="avan2">
+                    <img src="../../Desktop/MonSite/image/8-removebg-preview.png">
+                    <h3>Instant booking</h3><br>
+                    <h4>Quickly and easily reserve the ideal plot of land in just a few clicks.</h4>
+                </div>
+                <div id="avan3">
+                    <img src="../../Desktop/MonSite/image/9-removebg-preview.png">
+                    <h3>Geographic proximity</h3>
+                    <h4>Find nearby fields to practice without a complicated commute.</h4>
+                </div>
+                <div id="avan4">
+                    <img src="../../Desktop/MonSite/image/10-removebg-preview.png">
+                    <h3>Availability 24/7</h3>
+                    <h4>Book at any time thanks to our 24/7 service.</h4>
+                    </div>
+                <div id="avan5">
+                    <img src="../../Desktop/MonSite/image/11-removebg-preview.png">
+                    <h3>Full details</h3>
+                    <h4>Access key information on prices, availability and equipment.</h4>
+                </div>
+                <div id="avan6">
+                    <img src="../../Desktop/MonSite/image/12-removebg-preview.png">
+                    <h3>Special offers</h3>
+                    <h4>Take advantage of exclusive discounts to save on your reservations.</h4> 
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-container">
+                <h1>Don't wait any longer, download the app now!</h1>
+                <p>No more hassle, play whenever you want! Access the best courses in one click thanks to our application.</p>
+                <div class="btn-container">
+                    <a href="www.appstore.com"><img src="../../Desktop/MonSite/image/appstore.png" alt="Download on App Store"></a>
+                    <a href="www.playstore.com"><img src="../../Desktop/MonSite/image/playstore.png" alt="Get it on Google Play"></a>
+                </div>
+            </div>
+            <img class="phone-img" src="../../Desktop//MonSite/image/download-moc.png" alt="Phone showing app interface">
+        </div>
+    </main>
+
+
+    <footer>
+        <div>
+            <a href="#top" class="top"><h2>Back to TOP. ⬆ </h2></a>
+            <div class="us">
+                <div class="us1">
+                    <h3>Get to Know Us</h3>
+                    <a href="">careers</a><br><br>
+                    <a href="">about ZolaT.EA</a><br><br>
+                    <a href="">universitors relations</a>
+                </div>
+                <div class="us2">
+                    <h3>Make Money with Us</h3>
+                    <a href="">Sell products on ZolaT.EA</a><br><br>
+                    <a href="">Affiliate program</a><br><br>
+                    <a href="">>See make more money with us</a>
+                </div>
+                <div class="us3">
+                    <h3>Let Us Help You</h3>
+                    <a href="">Your  account</a><br><br>
+                    <a href="">Tracks your orders</a><br><br>
+                    <a href="">Help</a>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="../../Desktop/MonSite/image/nike.png" width="90" height="90" id="log1">
+                <img src="../../Desktop/MonSite/image/adidas.png" width="90" height="90" id="log2">
+                <img src="../../Desktop/MonSite/image/puma.png" width="90" height="90" id="log3">
+                <img src="../../Desktop/MonSite/image/EA.png" width="90" height="90" id="log4">
+                <img src="../../Desktop/MonSite/image/NBA.png" width="130" height="90" id="log5">
+                <img src="../../Desktop/MonSite/image/tennis.png" width="90" height="90" id="log6">
+                <hr>
+                <select id="language">
+                    <option value="Français" >Français</option>
+                    <option value="English">English</option>
+                    <option value="العربية">العربية</option>
+                    <option value="Deutsh">Deutsh</option>
+                </select><br>
+
+            </div>
+        </div> 
+    </footer>
+
+    <script>
+        // Check if user is logged in
+        window.onload = function() {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('login-buttons').style.display = 'none';
+                document.getElementById('account').style.display = 'block';
+                document.getElementById('username').textContent = username;
+            }
+        };
+
+        function logout() {
+            localStorage.removeItem('username');
+            window.location.reload();
+        }
+    </script>
+
+</body>
+</html>
